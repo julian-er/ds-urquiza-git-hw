@@ -21,6 +21,8 @@ if (is_numeric($first_num) && is_numeric($second_num)) {
             break;
         case "/":
             $result = $first_num / $second_num;
+        case "pow":
+            $result = pow($first_num, $second_num);
     }
 }
 
@@ -40,6 +42,7 @@ if (is_numeric($first_num) && is_numeric($second_num)) {
             <input type="submit" name="operator" value="-" />
             <input type="submit" name="operator" value="*" />
             <input type="submit" name="operator" value="/" />
+            <input type="submit" name="operator" value="pow" />
         </form>
         <p>
             <?php echo $result; ?>
